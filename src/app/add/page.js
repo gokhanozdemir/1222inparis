@@ -1,6 +1,19 @@
+"use client";
+
 import Image from "next/image";
 
+import { useState } from "react";
+
 export default function Home() {
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = (e) => {
+    e.preventDefault();
+    const todo = e.target.todo.value;
+    setTodos([...todos, todo]);
+    e.target.reset();
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -28,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <form>
+      <form onSubmit={addTodo}>
         <div className="flex flex-col items-center justify-center w-full max-w-5xl gap-8 px-8 py-16 mx-auto mt-16 bg-white rounded-xl shadow-lg dark:bg-zinc-800/30 lg:flex-row lg:gap-16 lg:py-24">
           <div className="flex flex-col items-center justify-center w-full max-w-xl gap-8">
             <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100">
