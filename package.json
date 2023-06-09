@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+
     "dev": "fkill :9002 :3002 -s && concurrently \"npm:backend\" \"npm:frontend-dev\"",
     "build": "next build",
     "start": "next start",
@@ -10,6 +11,7 @@
     "backend": "node src/mocks/api.js",
     "frontend-dev": "next dev",
     "frontend-prod": "next dev"
+
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
