@@ -1,5 +1,6 @@
+"use client";
 import { useState } from "react";
-import { axiosWithAuth } from "./axiosAuth";
+/* import { axiosWithAuth } from "./axiosAuth"; */
 
 export default function AddFriend() {
   const [data, setData] = useState({
