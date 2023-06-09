@@ -32,3 +32,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Friends API
+
+- **[POST]** \* `/api/login`: diğer tüm requestlerin headerınına eklenmesi gereken bir token döndürür. İsteğin `body` si olara şu kriterleri gönderin: `{ username: 'workintech', password: 'wecandoit' }`
+- **[POST]** \* `/api/logout`: kullanımdaki bir tokenı siler. inaktif bir token döndürür.
+- **[GET]** `/api/friends`: Friends karakterlerini döndürür.
+- **[GET]** `/api/friends/123`: id si URL'ye girilen karakteri döndürür (123 temsili bir değerdir)
+- **[POST]** \* `/api/friends`: Yeni bir karakter ekler.
+
+Tüm karakter nesneleri aşağıdaki biçimdedir:
+
+```js
+
+```
