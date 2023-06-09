@@ -41,8 +41,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - **[GET]** `/api/friends/123`: id si URL'ye girilen karakteri döndürür (123 temsili bir değerdir)
 - **[POST]** \* `/api/friends`: Yeni bir karakter ekler.
 
-Tüm karakter nesneleri aşağıdaki biçimdedir:
-
 ```js
+{
+  id: 1
+  name: 'Joe',
+  age: 24,
+  email: 'joe@schoolintech.com',
+}
+```
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/391613-6d196417-eb7a-4837-a425-52c662433e64?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D391613-6d196417-eb7a-4837-a425-52c662433e64%26entityType%3Dcollection%26workspaceId%3D23db89d0-0f22-4156-a2df-bd81b09ffeff)
+
+```
 
 ```
